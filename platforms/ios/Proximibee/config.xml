@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.wikitude.phonegapsamples" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Proximibee</name>
+    <description> Hello
+    </description>
+    <author>
+        Sebastien Pires, Loris Fochesato
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="phonegap-version" value="3.7.0" />
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="false" />
+    <preference name="target-device" value="universal" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="EnableViewportScale" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="HideKeyboardFormAccessoryBar" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="internalOnly" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="ErrorUrl" value="" />
+    <preference name="KeepRunning" value="true" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="LoadingDialog" value="," />
+    <preference name="LoadUrlTimeoutValue" value="20000" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <icon gap:platform="ios" height="72" src="www/assets/Proximibee.png" width="72" />
+    <icon gap:platform="ios" height="114" src="www/assets/Proximibee.png" width="114" />
+    <icon gap:platform="ios" height="144" src="www/assets/Proximibee.png" width="144" />
+    <icon gap:platform="ios" height="76" src="www/assets/Proximibee.png" width="76" />
+    <icon gap:platform="ios" height="120" src="www/assets/Proximibee.png" width="120" />
+    <icon gap:platform="ios" height="152" src="www/assets/Proximibee.png" width="152" />
+    <icon gap:density="ldpi" gap:platform="android" src="www/assets/Proximibee.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="www/assets/Proximibee.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="www/assets/Proximibee.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
+    <icon gap:density="xxhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
+    <icon gap:density="xxxhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
+    <icon gap:platform="ios" height="57" src="www/assets/Proximibee.png" width="57" />
+    <gap:splash src="www/splash.png" />
+    <preference name="SplashScreen" value="splash" />
+</widget>
