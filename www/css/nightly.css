@@ -970,7 +970,7 @@ progress[data-theme=b]::-moz-progress-value {
 
 #outofrange .item img{
   display: block;
-  width: 100%;
+  width: 97%;
 }
 
 #outofrange .item {
@@ -1063,12 +1063,14 @@ progress[data-theme=b]::-moz-progress-value {
     width: 102%;
     border-radius:0px;
     margin-left: -1px;
+    margin-top: -12px;
     height: 56px;
-    margin-top: -20px;
     border-color: #553C52;
 }
 
 #google {
+    width: 103%;
+    margin-top: -20px;
 
 }
 
