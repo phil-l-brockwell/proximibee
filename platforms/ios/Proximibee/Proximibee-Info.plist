@@ -178,5 +178,14 @@
         <string>{768, 1024}</string>
       </dict>
     </array>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app would like to scan for Estimote Beacons when in the background.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app would like to scan for Estimote Beacons while it is in use.</string>
+    <key>UIBackgroundModes</key>
+    <array>
+      <string>bluetooth-central</string>
+      <string>bluetooth-peripheral</string>
+    </array>
   </dict>
 </plist>

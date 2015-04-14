@@ -4,5 +4,143 @@
             "type": "registry",
             "id": "org.apache.cordova.splashscreen"
         }
+    },
+    "com.evothings.ble": {
+        "source": {
+            "type": "registry",
+            "id": "com.evothings.ble"
+        }
+    },
+    "com.megster.cordova.bluetoothserial": {
+        "source": {
+            "type": "registry",
+            "id": "com.megster.cordova.bluetoothserial"
+        }
+    },
+    "com.unarin.cordova.beacon": {
+        "source": {
+            "type": "registry",
+            "id": "com.unarin.cordova.beacon"
+        }
+    },
+    "de.appplant.cordova.plugin.local-notification": {
+        "source": {
+            "type": "registry",
+            "id": "de.appplant.cordova.plugin.local-notification"
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.camera": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.camera"
+        }
+    },
+    "org.apache.cordova.console": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.console"
+        }
+    },
+    "org.apache.cordova.device-motion": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device-motion"
+        }
+    },
+    "org.apache.cordova.device-orientation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device-orientation"
+        }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
+    },
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.geolocation"
+        }
+    },
+    "org.apache.cordova.globalization": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.globalization"
+        }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.inappbrowser"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
+    },
+    "org.apache.cordova.statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.statusbar"
+        }
+    },
+    "org.apache.cordova.vibration": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.vibration"
+        }
+    },
+    "org.chromium.common": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.common"
+        }
+    },
+    "org.chromium.iossocketscommon": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.iossocketscommon"
+        }
+    },
+    "org.chromium.socket": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.socket"
+        }
+    },
+    "org.chromium.system.network": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.system.network"
+        }
+    },
+    "org.chromium.sockets.tcp": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.sockets.tcp"
+        }
+    },
+    "org.chromium.sockets.udp": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.sockets.udp"
+        }
+    },
+    "pl.makingwaves.estimotebeacons": {
+        "source": {
+            "type": "registry",
+            "id": "pl.makingwaves.estimotebeacons"
+        }
     }
 }

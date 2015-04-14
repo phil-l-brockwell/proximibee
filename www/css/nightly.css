@@ -1286,8 +1286,8 @@ progress[data-theme=b]::-moz-progress-value {
     white-space:nowrap;
     }
     .imageDiv img {
-        box-shadow: 1px 1px 10px #999;
-        max-height: 100px;
+    box-shadow: 1px 1px 10px #999;
+    max-height: 100px;
     display:inline-block;
     *display:inline;
     *zoom:1;
@@ -1295,12 +1295,21 @@ progress[data-theme=b]::-moz-progress-value {
     }
 
 #scan {
-    background-color: #553C52;
-    color: white;
-    width: 102%;
-    border-radius:0px;
-    margin-left: -1px;
-    height: 50px;
-    margin-top: -0.5px;
-    border-color: #553C52;
+      background-color: #553C52;
+      color: white;
+      width: 102%;
+      border-radius: 0px;
+      margin-left: -1px;
+      height: 49px;
+      border-color: #553C52;
+}
+#scanoutofrange {
+      background-color: #553C52;
+      color: white;
+      width: 102%;
+      border-radius: 0px;
+      margin-left: -1px;
+      height: 56px;
+      margin-top: -17px;
+      border-color: #553C52;
 }
