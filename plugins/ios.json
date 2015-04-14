@@ -10,7 +10,71 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": false,
+                            "count": 4
+                        }
+                    ],
+                    "CoreBluetooth.framework": [
+                        {
+                            "xml": false,
+                            "count": 4
+                        }
+                    ],
+                    "CoreLocation.framework": [
+                        {
+                            "xml": false,
+                            "count": 5
+                        }
+                    ],
+                    "ImageIO.framework": [
+                        {
+                            "xml": true,
                             "count": 1
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MobileCoreServices.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreMotion.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": true,
+                            "count": 2
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Security.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "CFNetwork.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
                         }
                     ]
                 }
@@ -21,6 +85,142 @@
                         {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BLE\"><param name=\"ios-package\" value=\"EVOBLE\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocationManager\"><param name=\"ios-package\" value=\"CDVLocationManager\" /></feature>",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"ios-package\" onload=\"true\" value=\"APPLocalNotification\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"ios-package\" value=\"CDVAccelerometer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Compass\"><param name=\"ios-package\" value=\"CDVCompass\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"ios-package\" value=\"CDVGlobalization\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EstimoteBeacons\"><param name=\"ios-package\" value=\"EstimoteBeacons\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"ios-package\" onload=\"true\" value=\"MEGBluetoothSerial\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"IosSocketsCommon\"><param name=\"ios-package\" value=\"IosSocketsCommon\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSystemNetwork\"><param name=\"ios-package\" value=\"ChromeSystemNetwork\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSocket\"><param name=\"ios-package\" value=\"ChromeSocket\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSocketsTcp\"><param name=\"ios-package\" value=\"ChromeSocketsTcp\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSocketsUdp\"><param name=\"ios-package\" value=\"ChromeSocketsUdp\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSLocationAlwaysUsageDescription": [
+                        {
+                            "xml": "<string>This app would like to scan for iBeacons even when in the background.</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string>This app would like to scan for Estimote Beacons when in the background.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>This app would like to scan for iBeacons while it is in use.</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<string>This app would like to scan for Estimote Beacons while it is in use.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "UIBackgroundModes": [
+                        {
+                            "xml": "<array><string>bluetooth-central</string><string>bluetooth-peripheral</string></array>",
+                            "count": 1
                         }
                     ]
                 }
@@ -30,7 +230,77 @@
     "installed_plugins": {
         "org.apache.cordova.splashscreen": {
             "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "com.evothings.ble": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "com.megster.cordova.bluetoothserial": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "com.unarin.cordova.beacon": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.device-motion": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.device-orientation": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.globalization": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.chromium.common": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.chromium.iossocketscommon": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.chromium.socket": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.chromium.sockets.tcp": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.chromium.sockets.udp": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "pl.makingwaves.estimotebeacons": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        },
+        "org.chromium.system.network": {
+            "PACKAGE_NAME": "com.wikitude.phonegapsamples"
+        }
+    }
 }
