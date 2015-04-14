@@ -18,6 +18,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/nightly.js"></script>
     <script src="cordova.js"></script>
+    <script src="app.js"></script>
 
 
     </head>
@@ -135,18 +136,44 @@
             </script>
           </div>
 
-            <form id="searchform" data-theme="a">
-                <input data-role="none" class="nightly-input" type="text" name="s" placeholder="Enter your text" />
-                <input data-role="none" class="nightly-button" type="submit" name="submit" value="" />
-            </form>
-
 
             <div data-role="header" data-tap-toggle="false" data-theme='a' id="sidemenu">
-            <a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a>
-                <h1 class="header-title">Proximibee</h1>
+              <h1 class="header-title">Proximibee</h1>
+<!--             <div id="beacon1" style="visibility: hidden"><a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a></div> -->
             </div>
 
+              <!-- !!!!!! OUT RANGE !!!!!!-->
+
             <div data-role="content">
+            <div id="beacon2" style="display: none">
+            <div data-role="none" id="outofrange">
+            <div class="item">
+                      <img src="assets/background1.png" alt="Grab">
+                      <div class="text">
+                          <h1>Oh, Snap!</h1>
+                          <br>
+                          <h2>You are out of range of the Proximibee network</h2>
+                          <br><br><br>
+                          <div id="google">
+                          <img src="assets/map.png"></div>
+
+
+                      </div>
+
+                    </div>
+                    </div>
+                    <button id="scanoutofrange">Scan</button>
+                    </div>
+                    </div>
+
+
+            <!-- !!!!!! IN RANGE !!!!!!-->
+
+
+
+
+             <div id="beacon1" style="display: none">
+
                 <div data-role="none" id="main-slider" class="owl-carousel">
 
                     <div class="item">
@@ -179,9 +206,10 @@
                           <button data-role="none" class="nightly-button" id="basketbtn4">Add to basket</button>
                       </div>
                     </div>
+                    </div>
 
-                </div>
-            </div>
+
+
                 <div class="wrapper">
                   <div class="scrolls">
                        <img src="http://i43.tower.com/images/mm105792021/momentum-tobymac-cd-cover-art.jpg" />
@@ -197,7 +225,11 @@
                        <img src="https://cdn3.pcadvisor.co.uk/cmsdata/reviews/115750/Apple%20iMac.jpg" />
                   </div>
                 </div>
+
+
+
                 <button id="scan">Scan</button>
+                </div>
 
         <script type="text/javascript">
             $(document).ready(function($) {

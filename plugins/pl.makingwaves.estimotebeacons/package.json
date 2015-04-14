@@ -1,0 +1,16 @@
+{
+    "version": "0.6.0",
+    "name": "pl.makingwaves.estimotebeacons",
+    "cordova_name": "EstimoteBeacons",
+    "description": "Cordova/PhoneGap plugin for Estimote beacons.",
+    "license": "MIT",
+    "keywords": [
+        "Estimote",
+        " Beacons"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": []
+}

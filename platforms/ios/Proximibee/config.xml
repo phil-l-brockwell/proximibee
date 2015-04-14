@@ -13,6 +13,77 @@
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="BLE">
+        <param name="ios-package" value="EVOBLE" />
+    </feature>
+    <feature name="LocationManager">
+        <param name="ios-package" value="CDVLocationManager" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="ios-package" onload="true" value="APPLocalNotification" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <preference name="CameraUsesGeolocation" value="false" />
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="ios-package" value="CDVAccelerometer" />
+    </feature>
+    <feature name="Compass">
+        <param name="ios-package" value="CDVCompass" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="Globalization">
+        <param name="ios-package" value="CDVGlobalization" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <feature name="Vibration">
+        <param name="ios-package" value="CDVVibration" />
+    </feature>
+    <feature name="EstimoteBeacons">
+        <param name="ios-package" value="EstimoteBeacons" />
+    </feature>
+    <feature name="BluetoothSerial">
+        <param name="ios-package" onload="true" value="MEGBluetoothSerial" />
+    </feature>
+    <feature name="IosSocketsCommon">
+        <param name="ios-package" value="IosSocketsCommon" />
+    </feature>
+    <feature name="ChromeSystemNetwork">
+        <param name="ios-package" value="ChromeSystemNetwork" />
+    </feature>
+    <feature name="ChromeSocket">
+        <param name="ios-package" value="ChromeSocket" />
+    </feature>
+    <feature name="ChromeSocketsTcp">
+        <param name="ios-package" value="ChromeSocketsTcp" />
+    </feature>
+    <feature name="ChromeSocketsUdp">
+        <param name="ios-package" value="ChromeSocketsUdp" />
+    </feature>
     <name>Proximibee</name>
     <description> Hello
     </description>
