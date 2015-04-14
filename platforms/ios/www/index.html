@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-
-    <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Proximibee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
@@ -19,271 +18,245 @@
     <script src="js/nightly.js"></script>
     <script src="cordova.js"></script>
     <script src="app.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-theme='a'>
+    <div data-role="panel" data-display="push" id="sidebar" data-theme="a">
+      <h2 align="center">Basket</h2>
+      <p align="center" id="emptybasket">Your basket is empty</p>
+      <ol class="child"></ol>
+      <table data-role="pricing-table" id="price1">
+        <thead>
+          <tr>
+            <th>Product name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pricing-table-price">
+            <th>$<strong>69<sup>99</sup></strong><span class="pricing-table-pt">Quantity: 1</span></th>
+          </tr>
+          <tr>
+            <th>Lite package is an example of product with a little description</th>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      <table data-role="pricing-table" id="price2">
+        <thead>
+          <tr>
+            <th>Product name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pricing-table-price">
+            <th>$<strong>100</strong><span class="pricing-table-pt">Quantity: 1</span></th>
+          </tr>
+          <tr>
+            <th>Lite package is an example of product with a little description</th>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      <table data-role="pricing-table" id="price3">
+        <thead>
+          <tr>
+            <th>Product name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pricing-table-price">
+            <th>$<strong>50</strong><span class="pricing-table-pt">Quantity: 1</span></th>
+          </tr>
+          <tr>
+            <th>Lite package is an example of product with a little description</th>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      <table data-role="pricing-table" id="price4">
+        <thead>
+          <tr>
+            <th>Product name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pricing-table-price">
+            <th>$<strong>13</strong><span class="pricing-table-pt">Quantity: 1</span></th>
+          </tr>
+          <tr>
+            <th>Lite package is an example of product with a little description</th>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <form action="" method="POST" id="payment" style="overflow: scroll;">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_qjY8BN9AdsmDSmxfDNxj1ZUO"
+          data-amount="800000"
+          data-name="Makers Academy"
+          data-currency="gbp"
+          data-bitcoin="true"
+          data-description="12 weeks course (£8000.00)"
+          data-image="/128x128.png"></script>
+      </form>
+      <script>
+        $(document).ready(function(){
+          $("#basketbtn1").click(function(){
+            $("#payment").show();
+            $("#price1").show();
+            $("#emptybasket").hide();
+          });
+          $("#basketbtn2").click(function(){
+            $("#payment").show();
+            $("#price2").show();
+            $("#emptybasket").hide();
+          });
+          $("#basketbtn3").click(function(){
+            $("#payment").show();
+            $("#price3").show();
+            $("#emptybasket").hide();
+          });
+          $("#basketbtn4").click(function(){
+            $("#payment").show();
+            $("#price4").show();
+            $("#emptybasket").hide();
+          });
+        });
+      </script>
+    </div>
 
+    <div data-role="header" data-tap-toggle="false" data-theme='a' id="sidemenu">
+      <h1 class="header-title">Proximibee</h1>
+      <a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a>
+    </div>
 
-    </head>
-    <body>
-
-        <div data-role="page" data-theme='a'>
-
-          <div data-role="panel" data-display="push" id="sidebar" data-theme="a">
-            <h2 align="center">Basket</h2>
-
-            <p align="center" id="emptybasket">Your basket is empty</p>
-
-              <ol class="child"></ol>
-
-              <table data-role="pricing-table" id="price1">
-                <thead>
-                  <tr>
-                    <th>Product name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="pricing-table-price">
-                    <th>$<strong>69<sup>99</sup></strong><span class="pricing-table-pt">Quantity: 1</span></th>
-                  </tr>
-                  <tr>
-                    <th>Lite package is an example of product with a little description</th>
-                  </tr>
-                </tbody>
-              </table>
-              <br><br>
-              <table data-role="pricing-table" id="price2">
-                <thead>
-                  <tr>
-                    <th>Product name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="pricing-table-price">
-                    <th>$<strong>100</strong><span class="pricing-table-pt">Quantity: 1</span></th>
-                  </tr>
-                  <tr>
-                    <th>Lite package is an example of product with a little description</th>
-                  </tr>
-                </tbody>
-              </table>
-              <br><br>
-              <table data-role="pricing-table" id="price3">
-                <thead>
-                  <tr>
-                    <th>Product name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="pricing-table-price">
-                    <th>$<strong>50</strong><span class="pricing-table-pt">Quantity: 1</span></th>
-                  </tr>
-                  <tr>
-                    <th>Lite package is an example of product with a little description</th>
-                  </tr>
-                </tbody>
-              </table>
-              <br><br>
-              <table data-role="pricing-table" id="price4">
-                <thead>
-                  <tr>
-                    <th>Product name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="pricing-table-price">
-                    <th>$<strong>13</strong><span class="pricing-table-pt">Quantity: 1</span></th>
-                  </tr>
-                  <tr>
-                    <th>Lite package is an example of product with a little description</th>
-                  </tr>
-                </tbody>
-              </table>
-              <br>
-              <form action="" method="POST" id="payment" style="overflow: scroll;">
-                <script
-                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="pk_test_qjY8BN9AdsmDSmxfDNxj1ZUO"
-                  data-amount="800000"
-                  data-name="Makers Academy"
-                  data-currency="gbp"
-                  data-bitcoin="true"
-                  data-description="12 weeks course (£8000.00)"
-                  data-image="/128x128.png">
-                </script>
-              </form>
-
-            <script>
-            $(document).ready(function(){
-              $("#basketbtn1").click(function(){
-                $("#payment").show();
-                $("#price1").show();
-                $("#emptybasket").hide();
-              });
-              $("#basketbtn2").click(function(){
-                $("#payment").show();
-                $("#price2").show();
-                $("#emptybasket").hide();
-              });
-              $("#basketbtn3").click(function(){
-                $("#payment").show();
-                $("#price3").show();
-                $("#emptybasket").hide();
-              });
-              $("#basketbtn4").click(function(){
-                $("#payment").show();
-                $("#price4").show();
-                $("#emptybasket").hide();
-              });
-            });
-            </script>
+      <!-- !!!!!! IN RANGE !!!!!!-->
+      <div id="beacon1" style="display: none">
+      <div data-role="none" id="main-slider" class="owl-carousel">
+        <div class="item">
+          <img src="assets/1.jpg" alt="Grab">
+          <div class="text">
+            <h1>£69<sup>99</sup></h1>
+            <button data-role="none" class="nightly-button" id="basketbtn1">Add to basket</button>
           </div>
+        </div>
+        <div class="item">
+          <img src="assets/2.jpg" alt="Responsive">
+          <div class="text">
+            <h1>£100</h1>
+            <button data-role="none" class="nightly-button" id="basketbtn2">Add to basket</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/3.jpg" alt="CSS3">
+          <div class="text">
+            <h1>£50</h1>
+            <button data-role="none" class="nightly-button" id="basketbtn3">Add to basket</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/4.jpg" alt="Multi">
+          <div class="text">
+            <h1>£13</h1>
+            <button data-role="none" class="nightly-button" id="basketbtn4">Add to basket</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="wrapper">
+        <div class="scrolls">
+          <img src="http://i43.tower.com/images/mm105792021/momentum-tobymac-cd-cover-art.jpg" />
+          <img src="http://cdn.head-fi.org/e/e2/200x200px-ZC-e26aedfb_DSC_1720.jpeg" />
+          <img src="https://media1.giphy.com/media/2Faz26aK8sNos9NiE/200_s.gif" />
+          <img src="https://v.cdn.vine.co/r/avatars/A669C84F261176213761347170304_37abbb7ef67.1.5.jpg?versionId=Jq39FsQs6rlHWelxLu1mcMyDHn1Gcks." />
+          <img src="http://newsandviews.ceh.ac.uk/images/DSC_0700squarecrop.jpg/@@images/c1257ee0-92e8-48e5-bcc1-fb81acf3f918.jpeg" />
+          <img src="https://i1.wp.com/greatatmosphere.files.wordpress.com/2013/04/best-views-in-the-world-9-the-northern-lights.jpg?resize=200%2C200" />
+          <img src="http://cdn.agilitycms.com/agility-cms-blog/Images/Articles/Content-Managers/page-views-vs-unique-visitors-thumbthumb200x200_4957.jpg" />
+          <img src="http://collector.designrulz.com/wp-content/uploads/2013/05/Loft-Like-Penthouse-with-Panoramic-Views-in-Brooklyn-200x200.jpg" />
+          <img src="http://collector.designrulz.com/wp-content/uploads/2013/09/Luxurious-Penthouse-Offering-Panoramic-Views-of-Tel-Aviv-and-the-Mediterranean-200x200.jpg" />
+          <img src="http://www.mumbaimirror.com/photo/16192742.cms" />
+          <img src="https://cdn3.pcadvisor.co.uk/cmsdata/reviews/115750/Apple%20iMac.jpg" />
+        </div>
+      </div>
+      <button id="scan">Scan</button>
+      </div>
 
-            <div data-role="header" data-tap-toggle="false" data-theme='a' id="sidemenu">
-              <h1 class="header-title">Proximibee</h1>
-<!--             <div id="beacon1" style="visibility: hidden"><a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a></div> -->
+    <!-- !!!!!! OUT RANGE !!!!!!-->
+
+    <div data-role="content">
+      <div id="beacon2" style="display: block">
+        <div data-role="none" id="outofrange">
+          <div class="item">
+            <img src="assets/background1.png" alt="Grab">
+            <div class="text">
+              <h1>Oh, Snap!</h1>
+              <br>
+              <h2>You are out of range of the Proximibee network</h2>
+              <br><br><br>
+              <div id="google">
+                <img src="assets/map.png">
+              </div>
             </div>
-
-              <!-- !!!!!! OUT RANGE !!!!!!-->
-
-            <div data-role="content">
-            <div id="beacon2" style="display: none">
-            <div data-role="none" id="outofrange">
-            <div class="item">
-                      <img src="assets/background1.png" alt="Grab">
-                      <div class="text">
-                          <h1>Oh, Snap!</h1>
-                          <br>
-                          <h2>You are out of range of the Proximibee network</h2>
-                          <br><br><br>
-                          <div id="google">
-                          <img src="assets/map.png"></div>
-
-
-                      </div>
-
-                    </div>
-                    </div>
-                    <button id="scanoutofrange">Scan</button>
-                    </div>
-                    </div>
-
-
-            <!-- !!!!!! IN RANGE !!!!!!-->
-
-
-
-
-             <div id="beacon1" style="display: none">
-
-                <div data-role="none" id="main-slider" class="owl-carousel">
-
-                    <div class="item">
-                      <img src="assets/1.jpg" alt="Grab">
-                      <div class="text">
-                          <h1>£69<sup>99</sup></h1>
-                          <button data-role="none" class="nightly-button" id="basketbtn1">Add to basket</button>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="assets/2.jpg" alt="Responsive">
-                      <div class="text">
-                          <h1>£100</h1>
-                          <button data-role="none" class="nightly-button" id="basketbtn2">Add to basket</button>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <img src="assets/3.jpg" alt="CSS3">
-                      <div class="text">
-                          <h1>£50</h1>
-                          <button data-role="none" class="nightly-button" id="basketbtn3">Add to basket</button>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <img src="assets/4.jpg" alt="Multi">
-                      <div class="text">
-                          <h1>£13</h1>
-                          <button data-role="none" class="nightly-button" id="basketbtn4">Add to basket</button>
-                      </div>
-                    </div>
-                    </div>
-
-
-
-                <div class="wrapper">
-                  <div class="scrolls">
-                       <img src="http://i43.tower.com/images/mm105792021/momentum-tobymac-cd-cover-art.jpg" />
-                       <img src="http://cdn.head-fi.org/e/e2/200x200px-ZC-e26aedfb_DSC_1720.jpeg" />
-                       <img src="https://media1.giphy.com/media/2Faz26aK8sNos9NiE/200_s.gif" />
-                       <img src="https://v.cdn.vine.co/r/avatars/A669C84F261176213761347170304_37abbb7ef67.1.5.jpg?versionId=Jq39FsQs6rlHWelxLu1mcMyDHn1Gcks." />
-                       <img src="http://newsandviews.ceh.ac.uk/images/DSC_0700squarecrop.jpg/@@images/c1257ee0-92e8-48e5-bcc1-fb81acf3f918.jpeg" />
-                       <img src="https://i1.wp.com/greatatmosphere.files.wordpress.com/2013/04/best-views-in-the-world-9-the-northern-lights.jpg?resize=200%2C200" />
-                       <img src="http://cdn.agilitycms.com/agility-cms-blog/Images/Articles/Content-Managers/page-views-vs-unique-visitors-thumbthumb200x200_4957.jpg" />
-                       <img src="http://collector.designrulz.com/wp-content/uploads/2013/05/Loft-Like-Penthouse-with-Panoramic-Views-in-Brooklyn-200x200.jpg" />
-                       <img src="http://collector.designrulz.com/wp-content/uploads/2013/09/Luxurious-Penthouse-Offering-Panoramic-Views-of-Tel-Aviv-and-the-Mediterranean-200x200.jpg" />
-                       <img src="http://www.mumbaimirror.com/photo/16192742.cms" />
-                       <img src="https://cdn3.pcadvisor.co.uk/cmsdata/reviews/115750/Apple%20iMac.jpg" />
-                  </div>
-                </div>
-
-
-
-                <button id="scan">Scan</button>
-                </div>
-
-        <script type="text/javascript">
-            $(document).ready(function($) {
-                var time = 8;
-                  var
-                      $elem,
-                      isPause,
-                      tick,
-                      percentTime;
-                    $("#main-slider").owlCarousel({
-                          slideSpeed : 200,
-                          paginationSpeed : 1500,
-                          rewindSpeed : 1500,
-                          singleItem : true,
-                          pagination : false,
-                          lazyLoad : true,
-                          autoPlay : 7000,
-                          stopOnHover : true,
-                          navigationText: [
-                            "<i class='owl-nav-left fa fa-angle-left'></i>",
-                            "<i class='owl-nav-right fa fa-angle-right'></i>"
-                            ],
-                       });
-                    function progressBar(elem){
-                      $elem = elem;
-                      start();
-                    }
-                    function start() {
-                      percentTime = 0;
-                      isPause = false;
-                      tick = setInterval(interval, 10);
-                    };
-                    function interval() {
-                      if(isPause === false){
-                        percentTime += 1 / time;
-                        if(percentTime >= 100){
-                          $elem.trigger('owl.next')
-                        }
-                      }
-                    }
-                    function pauseOnDragging(){
-                      isPause = true;
-                    }
-                    function moved(){
-                      clearTimeout(tick);
-                      start();
-                    }
-                     $elem.on('mouseover',function(){
-                       isPause = true;
-                     })
-                     $elem.on('mouseout',function(){
-                       isPause = false;
-                     })
-            });
-        </script>
-    </body>
+          </div>
+        </div>
+        <button id="scanoutofrange">Scan</button>
+      </div>
+    </div>
+    <!-- End of view-->
+    <script type="text/javascript">
+      $(document).ready(function($) {
+          var time = 8;
+            var
+                $elem,
+                isPause,
+                tick,
+                percentTime;
+              $("#main-slider").owlCarousel({
+                    slideSpeed : 200,
+                    paginationSpeed : 1500,
+                    rewindSpeed : 1500,
+                    singleItem : true,
+                    pagination : false,
+                    lazyLoad : true,
+                    autoPlay : 7000,
+                    stopOnHover : true,
+                    navigationText: [
+                      "<i class='owl-nav-left fa fa-angle-left'></i>",
+                      "<i class='owl-nav-right fa fa-angle-right'></i>"
+                      ],
+                 });
+              function progressBar(elem){
+                $elem = elem;
+                start();
+              }
+              function start() {
+                percentTime = 0;
+                isPause = false;
+                tick = setInterval(interval, 10);
+              };
+              function interval() {
+                if(isPause === false){
+                  percentTime += 1 / time;
+                  if(percentTime >= 100){
+                    $elem.trigger('owl.next')
+                  }
+                }
+              }
+              function pauseOnDragging(){
+                isPause = true;
+              }
+              function moved(){
+                clearTimeout(tick);
+                start();
+              }
+               $elem.on('mouseover',function(){
+                 isPause = true;
+               })
+               $elem.on('mouseout',function(){
+                 isPause = false;
+               })
+      });
+    </script>
+  </body>
 </html>

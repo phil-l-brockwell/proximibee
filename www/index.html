@@ -128,12 +128,11 @@
 
     <div data-role="header" data-tap-toggle="false" data-theme='a' id="sidemenu">
       <h1 class="header-title">Proximibee</h1>
-      <div id="beacon1" style="display: block"><a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a>
-      </div>
+      <a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a>
     </div>
 
       <!-- !!!!!! IN RANGE !!!!!!-->
-
+      <div id="beacon1" style="display: none">
       <div data-role="none" id="main-slider" class="owl-carousel">
         <div class="item">
           <img src="assets/1.jpg" alt="Grab">
@@ -181,11 +180,12 @@
         </div>
       </div>
       <button id="scan">Scan</button>
+      </div>
 
     <!-- !!!!!! OUT RANGE !!!!!!-->
 
     <div data-role="content">
-      <div id="beacon2" style="display: none">
+      <div id="beacon2" style="display: block">
         <div data-role="none" id="outofrange">
           <div class="item">
             <img src="assets/background1.png" alt="Grab">
