@@ -48,7 +48,7 @@ var app = {
             }
 
             app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {
-                /* Respond to successful world loading if you need to */
+                /* Respond to successful world loading if you need to */ 
             }, function errorFn(error) {
                 alert('Loading AR web view failed: ' + error);
             },
@@ -62,7 +62,7 @@ var app = {
     },
     urlLauncher: function(url) {
         var world = {
-            "path": url,
+            "path": url, 
             "requiredFeatures": [
                 "2d_tracking",
                 "geo"
@@ -79,9 +79,9 @@ var app = {
             app.wikitudePlugin.captureScreen(
                 function(absoluteFilePath) {
                     alert("snapshot stored at:\n" + absoluteFilePath);
-                },
+                }, 
                 function (errorMessage) {
-                    alert(errorMessage);
+                    alert(errorMessage);                
                 },
                 true, null
             );

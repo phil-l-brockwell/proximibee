@@ -6,6 +6,7 @@ $(document).ready(function() {
   document.addEventListener('deviceready', apiCall, false);
 
   function apiCall() {
+    console.log('test')
     $.ajax({
     type: 'GET',
     dataType: 'jsonp',
@@ -39,7 +40,7 @@ $(document).ready(function() {
     $.each(beacon.products, function(index, product) {
       html += "<center><div class='item'><img src='" + product.url + "' style='width:100%;'><div class='simpleCart_shelfItem'><h2 class='item_name'>"
       html += product.name + "</h2><div class='text'><h3 class='item_price'>£" + product.price
-      html += "</h3><a href='javascript:;' id='basketbtn' class='item_add nightly-button' style='margin-top:0px'><b>Add to Cart</b></a></div></div></div></center>";
+      html += "</h3><a href='javascript:;' id='basketbtn' class='item_add nightly-button' style='margin-top:0px'><b>Add to Cart</b></a></div></div></div></div></center>";
     });
     return html += '</div>';
   };
@@ -60,7 +61,7 @@ $(document).ready(function() {
     if (updateNeeded()) {
       if (previousBeacon) $('#beacon' + previousBeacon.id).hide();
       $('#default').hide();
-      $('#beacon' + closestBeacon.id).show(10000);
+      $('#beacon' + closestBeacon.id).show();
     };
   };
 

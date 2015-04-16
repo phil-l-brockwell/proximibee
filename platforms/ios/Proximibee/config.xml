@@ -69,6 +69,9 @@
     <feature name="EstimoteBeacons">
         <param name="ios-package" value="EstimoteBeacons" />
     </feature>
+    <feature name="WikitudePlugin">
+        <param name="ios-package" value="WTWikitudePlugin" />
+    </feature>
     <feature name="BluetoothSerial">
         <param name="ios-package" onload="true" value="MEGBluetoothSerial" />
     </feature>
@@ -94,6 +97,7 @@
         Sebastien Pires, Loris Fochesato
     </author>
     <content src="index.html" />
+    <access origin="*" />
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="false" />
@@ -135,8 +139,4 @@
     <icon gap:density="xxhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
     <icon gap:density="xxxhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
     <icon gap:platform="ios" height="57" src="www/assets/Proximibee.png" width="57" />
-    <feature name="WikitudePlugin">
-        <param name="ios-package" value="WTWikitudePlugin" />
-    </feature>
-    <access origin="*" />
 </widget>

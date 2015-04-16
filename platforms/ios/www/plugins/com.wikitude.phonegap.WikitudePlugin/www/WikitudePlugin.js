@@ -1,4 +1,4 @@
-cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(require, exports, module) { 	
+cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(require, exports, module) {
 	/**
 	 * Release date: 09.03.15
 	 */
@@ -9,7 +9,7 @@ cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(r
 		 *  This is the SDK Key, provided to you after you purchased the Wikitude SDK from http =//www.wikitude.com/store/.
 		 *  If you're having a trial version, leave this string empty.
 		 */
-		this._sdkKey = "ENTER-YOUR-KEY-HERE";
+		this._sdkKey = "Pt5hdrH3JIpkqquhy1SoSClsP248FOjgLSeE2J7i65xQkHHRc8aKG2qP01QuiwYTfkbCuhhCA4I1NF+AeE5wyupa1VmUNoEH5YQ4lfYHUBnrD51SY9n6QljlY9WjFwjQrIGNDFhNkaVowQnx7xCMcuRyWOs1bDQcfgBzseaR4TpTYWx0ZWRfX/W9Y/L2mV9EcgGXBcj0tVX+v0pQ7YNl+dC9uB/Pm5eILXcW0Izgrc+tdUm36ftvfs5Qaw9JtGXTlOYhSwUupblZYxrNqNFsKIw0knq/d5dpbFWKXqNhvg0E4rbjgNahn5e8+DMEM90w/Dx8adPpPNBsdo1NhF2ljWxueksqYdu/LY/clqjmcZJdW9ZPb6AmWH0KU3xsspTFARKvN0fCvkR/BCiKIEg+DwPUYuALcbywx/zdBKVqGn9NySarpgglCiBDRUtuzzJ1Gh2fxQUq5bGeYqt1++rPxJlJC5mL9Tjghw83rBi7e8VQl91ZPjBxI2EHEMFazPPr8ZNB6QCLmaayPgO2VW9tfBuGuPOJ3e3B+pEAmklbvqT3fH1FZRhXIZQEKWgSHSfXSh8iehrfMkSKHUplkz0HsSyHKct8rkT2DRLXJC43FqfsjDPjEbW5ComaReYZWxSWsM/LUTRP7gXHYzWoC1bl2vXVADoG7EztUyxLrx7pi0FSaSRSXRVczUsXwzZCbTuxvkRdPLxdy1FHeV8Du5YfLO6sadwOTRFkXZSrDCOJ/SvdYhQrvmVPs/+BcLKvjN7//1ftDyXUm37qXlzhiAtr1xZMqrQ4T1LWzexWe2XVPfrPK/COdpPsJpTm5Wsf8PxlyBbZsnVe45UQLyUh8lXylT979w1Q+fHnUUsxvVfXVlQs0YH8A4ksJZOA0qObNkaOeLSsW4LNkuGodjSl3cS18rjHhbL4/RYYJUrRUYKaMYippuuEltTRMzhrGI1v2x03";
 
 		/**
 		 *  The Wikitude SDK can run in different modes.
@@ -26,14 +26,14 @@ cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(r
         this.CameraPositionUndefined = 0;
         this.CameraPositionFront     = 1;
         this.CameraPositionBack      = 2;
-                       
+
         /**
          *  Start-up configuration: camera focus range restriction (for iOS only).
          */
         this.CameraFocusRangeNone = 0;
         this.CameraFocusRangeNear = 1;
         this.CameraFocusRangeFar  = 2;
-        
+
 	};
 
 
@@ -64,9 +64,9 @@ cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(r
 	 *
      *  @param {function(loadedURL)}  		successCallback		function which is called after a successful launch of the AR world.
      *  @param {function(error)}		 	errorCallback		function which is called after a failed launch of the AR world.
-     *	@param {String} 					architectWorldPath	The path to a local ARchitect world or to a ARchitect world on a server or your 
+     *	@param {String} 					architectWorldPath	The path to a local ARchitect world or to a ARchitect world on a server or your
 	 *  @param {String} 					worldPath			path to an ARchitect world, either on the device or on e.g. your Dropbox.
-     *  @param {Array} 						requiredFeatures	augmented reality features: a flags mask for enabling/disablibg 
+     *  @param {Array} 						requiredFeatures	augmented reality features: a flags mask for enabling/disablibg
      *                                  geographic location-based (WikitudePlugin.FeatureGeo) or image recognition-based (WikitudePlugin.Feature2DTracking) tracking.
 	 *  @param {json object} (optional) startupConfiguration	represents the start-up configuration which may look like the following:
 	 *									{
@@ -75,16 +75,16 @@ cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(r
 	 *											"*optionalPlatformKey*": "*optionalPlatformValue*"
 	 *                                      	}
 	 *                               	}
-	 */	 
+	 */
 	WikitudePlugin.prototype.loadARchitectWorld = function(successCallback, errorCallback, architectWorldPath, requiredFeatures, startupConfiguration) {
-        
+
 		cordova.exec(successCallback, errorCallback, "WikitudePlugin", "open", [{
 				"SDKKey": this._sdkKey,
 				"ARchitectWorldURL": architectWorldPath,
 				"RequiredFeatures": requiredFeatures,
 		    	"StartupConfiguration" : startupConfiguration
 			}]);
-		
+
 		// We add an event listener on the resume and pause event of the application lifecycle
 		document.addEventListener("resume", this.onResume, false);
 		document.addEventListener("pause", this.onPause, false);
@@ -161,9 +161,9 @@ cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(r
     {
 		cordova.exec(successCallback, errorCallback, "WikitudePlugin", "captureScreen", [includeWebView, imagePathInBundleOrNullForPhotoLibrary]);
 	};
-	
+
 	/**
-	 * Use this function to set a callback that is called every time the Wikitude SDK encounters an internal error or warning. 
+	 * Use this function to set a callback that is called every time the Wikitude SDK encounters an internal error or warning.
 	 * Internal errors can occur at any time and might not be related to any WikitudePlugin function invocation.
 	 * An error code and message are passed in form of a JSON object.
 	 *
