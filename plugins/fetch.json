@@ -142,5 +142,18 @@
             "type": "registry",
             "id": "pl.makingwaves.estimotebeacons"
         }
+    },
+    "com.paypal.cordova.mobilesdk": {
+        "source": {
+            "type": "registry",
+            "id": "com.paypal.cordova.mobilesdk"
+        }
+    },
+    "com.wikitude.phonegap.WikitudePlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Wikitude/wikitude-phonegap.git",
+            "subdir": "."
+        }
     }
 }

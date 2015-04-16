@@ -247,6 +247,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.paypal.cordova.mobilesdk/www/cdv-plugin-paypal-mobile-sdk.js",
+        "id": "com.paypal.cordova.mobilesdk.PayPalMobile",
+        "clobbers": [
+            "PayPalMobile"
+        ]
+    },
+    {
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.device/www/device.js",
         "id": "org.apache.cordova.device.device",
         "clobbers": [
@@ -286,6 +300,8 @@ module.exports.metadata =
     "org.chromium.sockets.tcp": "1.3.2",
     "org.chromium.sockets.udp": "1.2.1",
     "pl.makingwaves.estimotebeacons": "0.6.0",
+    "com.paypal.cordova.mobilesdk": "3.1.4",
+    "com.wikitude.phonegap.WikitudePlugin": "4.1.0",
     "org.apache.cordova.device": "0.3.0",
     "org.chromium.system.network": "1.1.1"
 }

@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
-        "id": "org.apache.cordova.splashscreen.SplashScreen",
-        "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
         "file": "plugins/com.evothings.ble/ble.js",
         "id": "com.evothings.ble.BLE",
         "clobbers": [
@@ -19,6 +12,13 @@ module.exports = [
         "id": "com.megster.cordova.bluetoothserial.bluetoothSerial",
         "clobbers": [
             "window.bluetoothSerial"
+        ]
+    },
+    {
+        "file": "plugins/com.paypal.cordova.mobilesdk/www/cdv-plugin-paypal-mobile-sdk.js",
+        "id": "com.paypal.cordova.mobilesdk.PayPalMobile",
+        "clobbers": [
+            "PayPalMobile"
         ]
     },
     {
@@ -220,6 +220,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+        "id": "org.apache.cordova.splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.statusbar/www/statusbar.js",
         "id": "org.apache.cordova.statusbar.statusbar",
         "clobbers": [
@@ -282,6 +289,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.device/www/device.js",
         "id": "org.apache.cordova.device.device",
         "clobbers": [
@@ -299,9 +313,9 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.splashscreen": "1.0.0",
     "com.evothings.ble": "0.0.1",
     "com.megster.cordova.bluetoothserial": "0.4.2",
+    "com.paypal.cordova.mobilesdk": "3.1.4",
     "com.unarin.cordova.beacon": "3.3.0",
     "de.appplant.cordova.plugin.local-notification": "0.8.1",
     "org.apache.cordova.camera": "0.3.6",
@@ -313,6 +327,7 @@ module.exports.metadata =
     "org.apache.cordova.globalization": "0.3.4",
     "org.apache.cordova.inappbrowser": "0.6.0",
     "org.apache.cordova.network-information": "0.2.15",
+    "org.apache.cordova.splashscreen": "1.0.0",
     "org.apache.cordova.statusbar": "0.1.10",
     "org.apache.cordova.vibration": "0.3.13",
     "org.chromium.common": "1.0.6",
@@ -321,6 +336,7 @@ module.exports.metadata =
     "org.chromium.sockets.tcp": "1.3.2",
     "org.chromium.sockets.udp": "1.2.1",
     "pl.makingwaves.estimotebeacons": "0.6.0",
+    "com.wikitude.phonegap.WikitudePlugin": "4.1.0",
     "org.apache.cordova.device": "0.3.0",
     "org.chromium.system.network": "1.1.1"
 }

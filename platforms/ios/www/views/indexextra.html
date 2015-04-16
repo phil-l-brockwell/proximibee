@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Proximibee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nightly.css" />
+    <link rel="stylesheet" href="css/application.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic%7COswald:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- JS Scripts -->
+    <script type="text/javascript" src="js/simpleCart.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nightly.js"></script>
+    <script src="cordova.js"></script>
+    <script src="app.js"></script>
+    <script src="js/productscroll.js"></script>
+
+  </head>
+
+    <body>
+
+    <div data-role="page" data-theme='a'>
+
+      <div data-role="header" data-tap-toggle="false" data-theme='a' id="sidemenu">
+        <h1 class="header-title">Proximibee</h1>
+        <a href='#sidebar'data-role="none"><img src="images/trolley.png" alt="sidebar" id="header-menu-icon" height="30px" width="26px" /></a>
+      </div>
+
+      <div data-role="panel" data-display="push" id="sidebar" data-theme="a">
+        <center>
+        <h2 align="center">Basket</h2>
+        <h4 class="simpleCart_items"></h4>
+        <br>
+        <h4 class="simpleCart_total" id="cartTotal"></h4>
+        <button><a href="javascript:;" class="simpleCart_checkout" style="font-size:13pt; color:grey; text-decoration:none"><b>Pay Now</b></a></button>
+        <br><br>
+        <a href="javascript:;" class="simpleCart_empty" style="text-decoration:none; color:white">Empty Basket</a>
+        </center>
+      </div>
+
+
+
+<div id="lotOfPages">
+
+    <div class="view" id="page1">
+            <h1>Page 1</h1>
+        </div>
+
+    <div class="view hide" id="page2">
+            <h1>Page 2</h1>
+        </div>
+
+    <div class="view hide" id="page3">
+            <h1>Page 3</h1>
+        </div>
+
+    </div>
+
+    <button id="showPage1Btn" data-launch-view="page1">Page 1</button>
+    <button id="showPage2Btn" data-launch-view="page2">Page 2</button>
+    <button id="showPage3Btn" data-launch-view="page3">Page 3</button>
+
+
+      <script>
+        $(document).ready(function (e) {
+
+              function showView(viewName) {
+                  $('.view').hide();
+          $('#' + viewName).show();
+          }
+
+              $('[data-launch-view]').click(function (e) {
+                  e.preventDefault();
+                  var viewName = $(this).attr('data-launch-view');
+                  showView(viewName);
+              });
+
+          });
+      </script>
+
+      <footer>
+        <button id="scan">Scan</button>
+      </footer>
+
+    </body>
+
+</html>
+

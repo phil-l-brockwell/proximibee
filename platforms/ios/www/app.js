@@ -1,76 +1,58 @@
-var app = (function()
-{
-	// Application object.
-	var app = {};
-	// Dictionary of beacons.
-	var beacons = {};
-	// Timer that displays list of beacons.
-	var updateTimer = null;
+var advertisingDistance = 0.5;
+var updateTimer;
+var refreshInterval = 1000;
+var foundBeacons = {};
+var ownedBeacons = [ { name: 'beacon1', major: 8981,   minor: 49281 },
+										 { name: 'beacon2', major: 33613,  minor: 1285  },
+										 { name: 'beacon3', major: 56449,  minor: 6595  },
+										 { name: 'beacon4', major: 4851,   minor: 360 	},
+										 { name: 'beacon5', major: 23124,  minor: 41840 } ]
 
-	app.initialize = function()
-	{
-		document.addEventListener('deviceready', onDeviceReady, false);
+document.addEventListener('deviceready', onDeviceReady, false);
+
+function onDeviceReady() {
+	startScan();
+	updateTimer = setInterval(displayBeaconList, refreshInterval);
+}
+
+function startScan() {
+	estimote.beacons.requestAlwaysAuthorization();
+	estimote.beacons.startRangingBeaconsInRegion({}, onBeaconsRanged, onError);
+};
+
+function onBeaconsRanged(beaconInfo) {
+	rangedBeacons = beaconInfo.beacons;
+	$.each(rangedBeacons, function(index, fBeacon) {
+		$.each(ownedBeacons, function(index, oBeacon) {
+			if (fBeacon.major == oBeacon.major && fBeacon.minor == oBeacon.minor) {
+				fBeacon.name = oBeacon.name;
+				fBeacon.timeStamp = Date.now();
+				foundBeacons[fBeacon.name] = fBeacon;
+			};
+		});
+	});
+};
+
+function onError(errorMessage) {
+	console.log('Beacon ranging has failed: ' + errorMessage);
+};
+
+function findClosestBeaconIn(array) {
+	var closest
+	$.each(array, function(key, item) {
+		closest = closest || item
+		if (item.distance < closest.distance) closest = item;
+	});
+	return closest;
+};
+
+function displayBeaconList() {
+	var closestBeacon = findClosestBeaconIn(foundBeacons);
+	$.each(ownedBeacons, function(key, item) {
+		$('#' + item.name).hide();
+	});
+
+	if(closestBeacon.distance < advertisingDistance) {
+		$('#' + closestBeacon.name).show();
 	};
-
-	function onDeviceReady()
-	{
-		startScan();
-		updateTimer = setInterval(displayBeaconList, 100);
-	}
-
-	function startScan()
-	{
-		function onBeaconsRanged(beaconInfo)
-		{
-			for (var i in beaconInfo.beacons)
-			{
-				var beacon = beaconInfo.beacons[i];
-				if (beacon.rssi < 0)
-				{
-					beacon.timeStamp = Date.now();
-					var key = beacon.uuid + ':' + beacon.major + ':' + beacon.minor;
-					beacons[key] = beacon;
-				}
-			}
-		}
-
-		function onError(errorMessage)
-		{
-			console.log('Ranging beacons did fail: ' + errorMessage);
-		}
-
-		estimote.beacons.requestAlwaysAuthorization();
-		estimote.beacons.startRangingBeaconsInRegion({}, onBeaconsRanged, onError);
-	}
-
-function displayBeaconList()
-    {
-        $.each(beacons, function(key, beacon) {
-
-            if(beacon.distance < 0.05) {
-
-            // Beacon 1 Shop Entrance
-            //===============
-                    if(beacon.major == 23124 && beacon.minor == 41840) {
-                            var beacon1 = document.getElementById("beacon1");
-                            beacon1.style.display = "block";
-                            var beacon2 = document.getElementById("beacon2");
-                            beacon2.style.display = "none";
-                    }
-
-            // Beacon 2 Shop Exit
-            //===============
-                     else {
-                            var beacon1 = document.getElementById("beacon1");
-                            beacon1.style.display = "none";
-                            var beacon2 = document.getElementById("beacon2");
-                            beacon2.style.display = "block";
-                    }
-            };
-        });
-    }
-
-	return app;
-})();
-
-app.initialize();
+};

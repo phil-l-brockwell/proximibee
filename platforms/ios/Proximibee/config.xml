@@ -9,12 +9,11 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="BLE">
         <param name="ios-package" value="EVOBLE" />
+    </feature>
+    <feature name="PayPalMobile">
+        <param name="ios-package" onload="true" value="PayPalMobileCordovaPlugin" />
     </feature>
     <feature name="LocationManager">
         <param name="ios-package" value="CDVLocationManager" />
@@ -54,6 +53,10 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
@@ -91,7 +94,6 @@
         Sebastien Pires, Loris Fochesato
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="false" />
@@ -102,8 +104,6 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="false" />
-    <preference name="auto-hide-splash-screen" value="false" />
     <preference name="EnableViewportScale" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="AllowInlineMediaPlayback" value="false" />
@@ -114,18 +114,14 @@
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="internalOnly" />
-    <preference name="SplashScreenDelay" value="10000" />
     <preference name="ErrorUrl" value="" />
     <preference name="KeepRunning" value="true" />
     <preference name="DisallowOverscroll" value="false" />
     <preference name="LoadingDialog" value="," />
     <preference name="LoadUrlTimeoutValue" value="20000" />
     <preference name="disable-cursor" value="false" />
-    <preference name="AutoHideSplashScreen" value="false" />
-    <preference name="fullscreen" value="true" />
     <gap:platform name="ios" />
     <gap:platform name="android" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
     <icon gap:platform="ios" height="72" src="www/assets/Proximibee.png" width="72" />
     <icon gap:platform="ios" height="114" src="www/assets/Proximibee.png" width="114" />
     <icon gap:platform="ios" height="144" src="www/assets/Proximibee.png" width="144" />
@@ -139,6 +135,8 @@
     <icon gap:density="xxhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
     <icon gap:density="xxxhdpi" gap:platform="android" src="www/assets/Proximibee.png" />
     <icon gap:platform="ios" height="57" src="www/assets/Proximibee.png" width="57" />
-    <gap:splash src="www/splash.png" />
-    <preference name="SplashScreen" value="splash" />
+    <feature name="WikitudePlugin">
+        <param name="ios-package" value="WTWikitudePlugin" />
+    </feature>
+    <access origin="*" />
 </widget>
