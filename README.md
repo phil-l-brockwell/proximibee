@@ -23,7 +23,7 @@ A user visits a shop or a place fitted with a proximibee network beacon where th
 #####Beacons
 - When we started the project we didn't understand how a beacon worked, but we were all keen to incorporate this particular hardware to make the project more interesting.
 
-#####Mobile appication development
+#####Mobile application development
 - This was new to the team (not covered in the course). Cordova was used to enable the app to be developed in JavaScript and compiled for iOS. The app also needed to interact with Bluetooth, which added further challenges.
 
 #####Augmented Reality
