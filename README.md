@@ -8,7 +8,7 @@ Proximibee is an iOS app and was developed in 2 weeks during our final project a
 ##How does it work?
 A user visits a shop or a place fitted with a proximibee network beacon where they:
 - Can see and flick a list of the shop items automatically updating as they walk inside the shop (Beacons are so precise that we divided shops)
-- Can scan any object with the augmented reality functionnality to know more about a product
+- Can scan any object with the augmented reality functionality to know more about a product
 - Can add an item to the shopping cart and review a list of all added items
 - Can pay directly in the app using our payment system
 
@@ -21,7 +21,7 @@ A user visits a shop or a place fitted with a proximibee network beacon where th
 ##Challenges encountered
 
 #####Beacons
-- When we started the project we didn't understand how a beacon worked, but were all keen to incorporate this particular hardware to make the project more interesting.
+- When we started the project we didn't understand how a beacon worked, but we were all keen to incorporate this particular hardware to make the project more interesting.
 
 #####Mobile appication development
 - This was new to the team (not covered in the course). Cordova was used to enable the app to be developed in JavaScript and compiled for iOS. The app also needed to interact with Bluetooth, which added further challenges.
