@@ -1,5 +1,7 @@
 #[Proximibee](https://proximibee.herokuapp.com)
 
+![alt tag](http://i.imgur.com/PRDyljk.png)
+
 ##What is 'Proximibee'?
 Proximibee is an iOS app and was developed in 2 weeks during our final project at Makers Academy. It works with beacons and Augmented Reality
 
