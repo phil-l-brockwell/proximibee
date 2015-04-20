@@ -13,11 +13,9 @@ A user visits a shop or a place fitted with a proximibee network beacon where th
 - Can pay directly in the app using our payment system
 
 ##Technologies
-| Front End   | Back End      | Databases    | Testing | Augmented Reality | Beacons  | Mobile Development |
-| ------------|-------------  | -----        | -----   | ----------------- | -------- | ------------------ |
-| JavaScript  | Ruby on Rails | PostgreSQL   | Rspec   | Wikitude          | Estimote | Cordova & Phonegap |
-| HTML & CSS  |               |              |         |                   |          |                    |
-| jQuery      |               |              |         |                   |          |                    |
+| Front End                       | Back End      | Databases    | Testing | Augmented Reality | Beacons  | Mobile Development |
+| ------------                    |-------------  | -----        | -----   | ----------------- | -------- | ------------------ |
+| JavaScript, HTML & CSS, jQuery  | Ruby on Rails | PostgreSQL   | Rspec   | Wikitude          | Estimote | Cordova & Phonegap |
 
 
 ##Challenges encountered
