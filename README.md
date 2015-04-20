@@ -1,4 +1,4 @@
-#[Proximibee](https://proximibee.herokuapp.com)
+#[Proximibee](http://proximibee.herokuapp.com)
 
 ![alt tag](http://i.imgur.com/PRDyljk.png)
 
