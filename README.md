@@ -1,7 +1,7 @@
 # proximibee
 
 A project worked on for the Makers Academy Final Project. 
-Our task was to create a mobile app that could be used during trade show events, using iBeacons to provide relevant product information.
+Our task was to create a mobile app that could be used during trade show events, using iBeacons to provide relevant product information for different product sections.
 
 # The Team
 
@@ -19,10 +19,6 @@ Our task was to create a mobile app that could be used during trade show events,
 * Jasmine for testing Javascript code
 * Ruby on rails database for backend user management system, allowing trade show owner to add beacons/products
 * Augmented reality to show enriched product information
-
-# What does it do?
-The proximibee app allows for interactive shopping experiences. 
-Beacons are placed in different product sections/areas and relevant content is delivered through the app to the users phone.
 
 # Video
 
