@@ -34,7 +34,7 @@ We created a video demonstration to show the potential uses of the application: 
 
 We implemented a user management system which could potentially allow trade show owners to log in with a user account and add beacons/products to their events.
 
-The repository can be viewed here: [User Management System]()
+The repository can be viewed here: [User Management System](https://github.com/robertpulson/proximibee_admin)
 
 # Future enhancements
 
