@@ -1,4 +1,4 @@
-cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(require, exports, module) {
+cordova.define("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin", function(require, exports, module) { 
 	/**
 	 * Release date: 09.03.15
 	 */
