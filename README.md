@@ -26,6 +26,17 @@ We created a video demonstration to show the potential uses of the application: 
 
 # Screenshots
 
+![ScreenShot](https://github.com/robertpulson/proximibee/blob/master/screenshots/slack_for_ios_upload_720.png?raw=true)
+
+![ScreenShot](https://github.com/robertpulson/proximibee/blob/master/screenshots/slack_for_ios_upload_720-1.png?raw=true)
+
+![ScreenShot](https://github.com/robertpulson/proximibee/blob/master/screenshots/slack_for_ios_upload_720-2.png?raw=true)
+
+![ScreenShot](https://github.com/robertpulson/proximibee/blob/master/screenshots/slack_for_ios_upload_720-3.png?raw=true)
+
+![ScreenShot](https://github.com/robertpulson/proximibee/blob/master/screenshots/slack_for_ios_upload_720-4.png?raw=true)
+
+
 # User Management System
 
 We implemented a user management system which could potentially allow trade show owners to log in with a user account and add beacons/products to their events.
